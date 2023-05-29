@@ -18,32 +18,10 @@ let continuarEstudando = prompt(`${nome}, quer seguir se especializando na área
     }
 
 let curioso = prompt(`${nome}, quais são as tecnologias nas quais você gostaria de se especializar ou de conhecer mais?`);
-    while (curioso != null) {
+        while (curioso != null) {
         let curiosoResposta = prompt(`${nome}, tem mais alguma tecnologia que você gostaria de aprender?`);
     }
     
 
 
-let gostaEstudar = prompt('Você gosta de estudar ' + linguagemEstudo + '?' + ' Responda com o número 1 para SIM ou 2 para NÃO');
-  if (gostaEstudar == 1) {
-    alert('Muito bom! Continue estudando e você terá muito sucesso.');
-  }
-  if (gostaEstudar == 2) {
-    alert('Ahh que pena... Já tentou aprender outras linguagens?');
-  }
 
-
-var numeroSecreto = parseInt(Math.random() * 1001 + 1)
-var quantidadeTentativas = 1
-var jogador = prompt('Qual é o seu nome?')
-while(chute != numeroSecreto) {
-  var chute = prompt('Digite um número entre 1 e 1000')
-  if (chute == numeroSecreto) {
-    alert('Certa resposta ' + jogador + ', agora pode tentar a sorte na Mega Sena! Volte sempre e me deixem críticas contrutivas, obrigado!')
-  } else if (chute > numeroSecreto) {
-    alert('Errou... o número secreto é menor do que ' + chute + ', tente novamente!')
-  } else if (chute < numeroSecreto) {
-    alert('Errou... o número secreto é maior do que ' + chute + ', tente novamente!')
-  }
-  alert('Quantidade de tentaivas: '+ quantidadeTentativas++)
-}
