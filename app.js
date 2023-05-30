@@ -17,11 +17,12 @@ let continuarEstudando = prompt(`${nome}, quer seguir se especializando na área
         alert (`${nome}, isso vai lhe tonar um profissional com muitas áreas de atuação, mergulhe nos estudos e sucesso sempre!`)
     }
 
-let curioso = prompt(`${nome}, quais são as tecnologias nas quais você gostaria de se especializar ou de conhecer mais?`);
-        while (curioso != null) {
-        let curiosoResposta = prompt(`${nome}, tem mais alguma tecnologia que você gostaria de aprender?`);
+let msg = prompt(`${nome}, tem mais tecnologias nas quais você gostaria de se especializar ou de conhecer mais? Digite 'Sim' em caso positivo`);
+        while (msg === "Sim") {
+        let qualTecnologia = prompt("Qual?");
+        alert(`${nome}, estudar ${qualTecnologia} me parece uma boa ideia para seu sucesso profissional!`);
+        msg = prompt(`${nome}, tem mais alguma tecnologia que você gostaria de aprender? Digite 'Sim' em caso positivo`);
     }
-    
 
 
 
